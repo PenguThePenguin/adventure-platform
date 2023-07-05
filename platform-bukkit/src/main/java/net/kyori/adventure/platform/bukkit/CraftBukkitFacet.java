@@ -1406,6 +1406,7 @@ class CraftBukkitFacet<V extends CommandSender> extends FacetBase<V> {
 
     @Override
     public boolean isSupported() {
+      //net.kyori.adventure.tablist.Tab tab;
       return (CLIENTBOUND_TAB_LIST_PACKET_CTOR != null || CLIENTBOUND_TAB_LIST_PACKET_CTOR_PRE_1_17 != null) && CLIENTBOUND_TAB_LIST_PACKET_SET_HEADER != null && CLIENTBOUND_TAB_LIST_PACKET_SET_FOOTER != null && super.isSupported();
     }
 
